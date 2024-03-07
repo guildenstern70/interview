@@ -8,9 +8,9 @@ package ibm.it.consulting;
  * @param username
  * @param password
  */
-public record EntityDto(String name, String surname, String username, String password)
+public record UserDto(String name, String surname, String username, String password)
 {
-    public EntityDto
+    public UserDto
     {
         password = "***************";
     }
@@ -18,7 +18,7 @@ public record EntityDto(String name, String surname, String username, String pas
     @Override
     public String toString()
     {
-        return "EntityDto {" +
+        return "USER {" +
                 "name='" + name + '\'' +
                 ", surname='" + surname + '\'' +
                 ", username='" + username + '\'' +

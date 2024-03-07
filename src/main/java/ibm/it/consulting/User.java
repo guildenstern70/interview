@@ -1,6 +1,6 @@
 package ibm.it.consulting;
 
-public class Entity
+public class User
 {
 
     public String name;
@@ -11,7 +11,7 @@ public class Entity
 
     public String password;
 
-    public Entity(String name, String surname, String username, String password)
+    public User(String name, String surname, String username, String password)
     {
         this.name = name;
         this.surname = surname;
@@ -19,9 +19,9 @@ public class Entity
         this.password = password;
     }
 
-    public EntityDto toDto()
+    public UserDto toDto()
     {
-        return new EntityDto(this.name, this.surname, this.username, this.password);
+        return new UserDto(this.name, this.surname, this.username, this.password);
     }
 }
 

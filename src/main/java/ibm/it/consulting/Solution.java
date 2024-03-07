@@ -8,7 +8,7 @@ public class Solution
 
         // Print users with password field hidden
         users.stream()
-                .map(Entity::toDto)
+                .map(User::toDto)
                 .forEach(UsersService::printUser);
     }
 }
